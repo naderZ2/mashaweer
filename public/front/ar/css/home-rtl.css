@@ -13,14 +13,16 @@
   -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   -o-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   -ms-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); }
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  direction: ltr; }
   @media (max-width: 991px) {
     .header {
       padding-bottom: 15px; } }
   .header .container {
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    direction: ltr; }
   .header .min-header {
     display: flex;
     width: 100%;
@@ -196,7 +198,8 @@
       float: left;
       position: relative;
       z-index: 10;
-      margin-left: 25px; }
+      margin-left: 25px;
+      margin-right: 0px; }
       @media (max-width: 1199px) {
         .header .menu #cssmenu {
           margin-left: 20px; } }
@@ -333,7 +336,9 @@
       -webkit-transition: all 0.5s ease-in-out 0s;
       transition: all 0.5s ease-in-out 0s;
       border: 0px;
-      cursor: pointer; }
+      cursor: pointer;
+      order: 3;
+      margin-left: 20px; }
       .header .menu .searchicon:hover {
         color: #353533; }
       @media (max-width: 991px) {
@@ -342,7 +347,8 @@
           top: 11px;
           right: 50px;
           z-index: 10;
-          color: #000; } }
+          color: #000;
+          left: auto; } }
     .header .menu .showboxsearch {
       position: fixed;
       top: 0px;
@@ -357,7 +363,9 @@
         top: 30px;
         right: 15px;
         z-index: 100;
-        cursor: pointer; }
+        cursor: pointer;
+        right: auto;
+        left: 30px; }
         .header .menu .showboxsearch .cancel-search:before, .header .menu .showboxsearch .cancel-search:after {
           position: absolute;
           top: 4px;
@@ -414,7 +422,8 @@
           -webkit-border-radius: 60px;
           border-radius: 60px;
           background-clip: padding-box;
-          border: 0px; }
+          border: 0px;
+          padding: 0px 15px 0px 60px; }
         .header .menu .showboxsearch .formsearch .btn {
           width: 40px;
           height: 40px;
@@ -430,7 +439,9 @@
           -o-transition: all 0.5s ease-in-out 0s;
           -webkit-transition: all 0.5s ease-in-out 0s;
           transition: all 0.5s ease-in-out 0s;
-          border: 0px; }
+          border: 0px;
+          right: auto;
+          left: 5px; }
           .header .menu .showboxsearch .formsearch .btn:hover {
             background: #353533; }
     .header .menu .bottom {
@@ -459,7 +470,8 @@
       transition: all 0.5s ease-in-out 0s;
       cursor: pointer;
       margin-left: 40px;
-      padding: 5px 15px; }
+      padding: 5px 15px;
+      order: 2; }
       .header .menu .bottom:before {
         content: "";
         position: absolute;
@@ -498,7 +510,9 @@
           padding: 0px 10px;
           font-size: 12px;
           position: relative;
-          z-index: 10; } }
+          z-index: 10;
+          margin-left: 0px;
+          margin-right: 65px; } }
       @media (max-width: 450px) {
         .header .menu .bottom {
           display: none; } }
@@ -509,7 +523,9 @@
   .header .menu #cssmenu {
     position: absolute;
     right: 15px;
-    width: 200px; }
+    width: 200px;
+    left: auto;
+    right: 15px; }
     .header .menu #cssmenu #menu-button {
       display: block; }
     .header .menu #cssmenu ul {
@@ -539,7 +555,8 @@
       cursor: pointer;
       float: right;
       height: 20px;
-      width: 20px; }
+      width: 20px;
+      float: right; }
       .header .menu #cssmenu #menu-button:after {
         position: absolute;
         top: 10px;
@@ -553,7 +570,9 @@
         -moz-transition: all 0.3s ease-in-out 0s;
         -o-transition: all 0.3s ease-in-out 0s;
         -webkit-transition: all 0.3s ease-in-out 0s;
-        transition: all 0.3s ease-in-out 0s; }
+        transition: all 0.3s ease-in-out 0s;
+        left: auto;
+        right: 0px; }
       .header .menu #cssmenu #menu-button:before {
         position: absolute;
         top: 4px;
@@ -566,7 +585,9 @@
         -moz-transition: all 0.3s ease-in-out 0s;
         -o-transition: all 0.3s ease-in-out 0s;
         -webkit-transition: all 0.3s ease-in-out 0s;
-        transition: all 0.3s ease-in-out 0s; }
+        transition: all 0.3s ease-in-out 0s;
+        left: auto;
+        right: 0px; }
       .header .menu #cssmenu #menu-button.menu-opened:after {
         -webkit-transform: rotate(45deg);
         -moz-transform: rotate(45deg);
@@ -581,7 +602,9 @@
         -moz-transition: all 0.3s ease-in-out 0s;
         -o-transition: all 0.3s ease-in-out 0s;
         -webkit-transition: all 0.3s ease-in-out 0s;
-        transition: all 0.3s ease-in-out 0s; }
+        transition: all 0.3s ease-in-out 0s;
+        left: auto;
+        right: 0px; }
       .header .menu #cssmenu #menu-button.menu-opened:before {
         -webkit-transform: rotate(-45deg);
         -moz-transform: rotate(-45deg);
@@ -594,7 +617,9 @@
         -moz-transition: all 0.3s ease-in-out 0s;
         -o-transition: all 0.3s ease-in-out 0s;
         -webkit-transition: all 0.3s ease-in-out 0s;
-        transition: all 0.3s ease-in-out 0s; }
+        transition: all 0.3s ease-in-out 0s;
+        left: auto;
+        right: 0px; }
     .header .menu #cssmenu .submenu-button {
       position: absolute;
       top: 0px;
@@ -604,7 +629,11 @@
       height: 48px;
       width: 48px;
       cursor: pointer;
-      z-index: 10; }
+      z-index: 10;
+      left: auto;
+      right: 0px;
+      border-left: 1px solid rgba(120, 120, 120, 0.2);
+      border-right: 0px; }
       .header .menu #cssmenu .submenu-button.submenu-button.submenu-opened {
         background: #00aef0; }
   .header .menu #cssmenu ul ul li a {
@@ -3774,6 +3803,17 @@
 .tp-caption.noshadow {
   text-shadow: none; }
 
+.tp-caption a {
+  color: #ff7302;
+  text-shadow: none;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out; }
+
+.tp-caption a:hover {
+  color: #ffa902; }
+
 .tp-caption.thinheadline_dark {
   position: absolute;
   color: rgba(0, 0, 0, 0.85);
@@ -4826,9 +4866,9 @@ body {
   @media (max-width: 991px) {
     .header .menu .searchicon {
       position: absolute;
-      top: 11px;
-      right: auto;
-      left: 50px; } }
+      top: 18px;
+      left: auto;
+      right: 70px; } }
   .header .menu .showboxsearch .cancel-search {
     position: absolute;
     right: auto;
@@ -4847,7 +4887,7 @@ body {
         margin: 0px;
         margin-left: 65px; } }
 
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
   .header .menu #cssmenu {
     position: absolute;
     right: auto;
@@ -4872,7 +4912,7 @@ body {
   .header .menu #cssmenu ul ul ul,
   .header .menu #cssmenu.align-right ul ul {
     left: auto;
-    right: 0px; } }
+    right: 0px; } } */
 .title {
   font-size: 24px !important; }
   @media (max-width: 991px) {

@@ -31,7 +31,7 @@
     <div class="container">
 
         <!--<h2 class="title">{!! app()->getLocale() == "en" ? strip_tags($result_brand_details->name_en) : strip_tags($result_brand_details->name) !!} </h2>-->
-        <h2 class="title">Our Services </h2>
+        <h2 class="title">{{ __('s_our_services') }} </h2>
         <p class="text-center">
         {!! app()->getLocale() == "en" ? strip_tags($result_brand_details->details_en) : strip_tags($result_brand_details->details) !!} 
         </p>

@@ -58,7 +58,7 @@
             <ul> 
               <li><a class="{{$result_menu_id == 1 ? 'active' : ''}}" href="{{route('home',app()->getLocale())}}" title="{{ __('s_home') }}"> {{ __('s_home') }} </a></li>
               <li><a class="{{$result_menu_id == 2 ? 'active' : ''}}" href="{{route('about',app()->getLocale())}}" title="{{ __('s_about') }}"> {{ __('s_about') }} </a></li>
-              <li><a class="{{$result_menu_id == 8 ? 'active' : ''}}" href="{{route('qoute',app()->getLocale())}}" title="{{ __('s_about') }}"> Join Us </a></li>
+              <li><a class="{{$result_menu_id == 8 ? 'active' : ''}}" href="{{route('qoute',app()->getLocale())}}" title="{{ __('s_about') }}">  {{ __('s_join_us') }}</a></li>
               
              @if($data->products ==1)
                   <li><a class="{{$result_menu_id == 3 ? 'active' : ''}}" href="{{route('brands',app()->getLocale())}}" title="{{ __('s_brands') }}"> {{ __('s_brands') }}   <i class="fas fa-chevron-down"></i></a>
