@@ -20,7 +20,9 @@
   .header .container {
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    direction: rtl;
+  }
   .header .min-header {
     display: flex;
     width: 100%;
@@ -191,6 +193,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
     /* End NavMenu */ }
     .header .menu #cssmenu {
       float: left;
@@ -339,7 +342,7 @@
       @media (max-width: 991px) {
         .header .menu .searchicon {
           position: absolute;
-          top: 11px;
+          top: -5px;
           left: 65px;
           z-index: 10;
           color: #000; } }
