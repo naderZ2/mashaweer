@@ -14,7 +14,7 @@
           <div class="col-sm-6  item formitem">
             
             <div class="inner" >
-              <h2 class="title" style="text-align: center;">Join Us</h2>
+              <h2 class="title" style="text-align: center;"> {{ __('s_join_us') }}</h2>
               <p class="text">{{ __('s_contact_information_details')}}</p>
               <form action="{{route('qoute_withus',app()->getLocale())}}" method="post" enctype='multipart/form-data'>
                 @csrf
